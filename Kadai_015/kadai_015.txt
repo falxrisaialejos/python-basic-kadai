@@ -1,0 +1,57 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": []
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "code",
+      "execution_count": 3,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "cXhrdSEl5hFf",
+        "outputId": "8af51c35-1ef6-4eed-bc2c-376b4933c7a9"
+      },
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "名前: テラコヤ一郎\n",
+            "年齢: 20\n"
+          ]
+        }
+      ],
+      "source": [
+        "# Humanクラスの定義\n",
+        "class Human:\n",
+        "    def __init__(self, name, age):\n",
+        "        self.name = name  # 名前の属性\n",
+        "        self.age = age    # 年齢の属性\n",
+        "\n",
+        "    def printinfo(self):\n",
+        "        # 名前と年齢を標準出力する\n",
+        "        print(\"名前:\", self.name)\n",
+        "        print(\"年齢:\", self.age)\n",
+        "\n",
+        "# Humanクラスのインスタンスを作成し、変数personに代入\n",
+        "person = Human(\"テラコヤ一郎\", 20)\n",
+        "\n",
+        "# printinfoメソッドを使って、名前と年齢を出力\n",
+        "person.printinfo()"
+      ]
+    }
+  ]
+}
